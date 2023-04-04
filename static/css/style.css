@@ -1,0 +1,271 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url("https://use.typekit.net/jco5luh.css");
+@import url("https://use.typekit.net/jco5luh.css");
+@import url("https://use.typekit.net/jco5luh.css");
+@import url("https://use.typekit.net/jco5luh.css");
+@import url("https://use.typekit.net/jco5luh.css"); /* gandur-new, sans-serif, normal, 300, 600, 700 */
+@import url("https://use.typekit.net/jco5luh.css"); /* dazzle-unicase, 300, 600, 700 */
+@import url("https://use.typekit.net/jco5luh.css"); /* Futura PT, 700, 800, italic */
+@import url("https://use.typekit.net/jco5luh.css"); /* Mokoko, 300, 600, 700 */
+@import url("https://use.typekit.net/jco5luh.css"); /* stolzl, 300, 600, 700 */
+
+
+
+/* body */
+
+body {
+    /* background-image: url('/static/images/BG3.png'); */
+    /* background-size: 100%; */
+    background-color: rgb(5, 23, 50);
+  }
+
+  .fixed-container {
+    background-image: url('/static/images/BG3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .audio-container {
+    margin: -30px 0 0;
+    width: 100%; /* adjust as desired */
+    height: 100%; /* adjust as desired */
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+  
+  .center-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+/* footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 40px;
+    text-align: right;
+}
+  
+  .footer-text {
+    font-family: gandur-new, sans-serif; 
+    font-weight: 300; 
+    font-style: normal; 
+    font-size: 150%;
+    opacity: 0.8;
+    color: #051527;
+    
+}  
+
+
+/* audio player */
+
+#audio-player {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+  
+  #audio {
+    display: none;
+  }
+
+  #play-button i, #pause-button i {
+    color: #10182F;
+    opacity: 0.8;
+    /* top: 100%; */
+
+  }
+  
+  #play-button {
+    position: absolute;
+    margin: 200px 0 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  #pause-button {
+    display: none;
+    position: absolute;
+    margin: 200px 0 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .button-icon {
+    color: #10182F;
+    font-size: 27px;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  #prev-button {
+    color: #10182F;
+    font-size: 27px;
+    position: relative;
+    top: 50%;
+    right: 118%;
+    transform: translate(0, -50%);
+  }
+  
+  #next-button {
+    color: #10182F;
+    position: relative;
+    top: 50%;
+    left: 120%;
+    transform: translate(0, -148%);
+  }
+  
+/* text effect */
+
+.hero-text {
+    font-family: gandur-new, sans-serif; 
+    font-weight: 600; 
+    font-style: normal; 
+
+
+    font-size: 1000%;
+    opacity: 0.8;
+    color: #051527;
+    margin: 0 0 10px;
+}  
+
+.song-title {
+    font-family: gandur-new, sans-serif; 
+    font-weight: 600; 
+    font-style: normal; 
+
+
+    font-size: 700%;
+    opacity: 0.8;
+    color: #051527;
+    margin: 150px 0 0;
+  }
+
+  .time {
+    font-family: gandur-new, sans-serif; 
+    font-weight: 300; 
+    font-style: normal; 
+
+
+    font-size: 150%;
+    opacity: 0.8;
+    color: #051527;
+    margin: 75px 0 0;
+  }
+
+.shadow {
+    text-shadow: 0 0 10px #355A68, 0 0 20px #355A68, 0 0 30px #10182F, 0 0 40px #10182F, 0 0 50px #10182F, 0 0 60px #10182F, 0 0 70px #10182F;
+
+}
+
+
+.glow {
+    text-align: center;
+    -webkit-animation: glow 15s ease-in-out infinite alternate;
+    -moz-animation: glow 15s ease-in-out infinite alternate;
+    animation: glow 15s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #5191B3, 0 0 10px #5191B3, 0 0 20px #5191B3, 0 0 30px #5191B3 0 0 40px #5191B3, 0 0 50px #5191B3, 0 0 60px #5191B3;
+    }
+    to {
+      text-shadow: 0 0 10px #355A68, 0 0 20px #355A68, 0 0 30px #10182F, 0 0 40px #10182F, 0 0 50px #10182F, 0 0 60px #10182F, 0 0 70px #10182F;
+    }
+  }
+
+
+
+
+/* mobile devices */
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('/static/images/BG3-mobile2.png');  
+        background-size: cover;
+    }
+
+    h1.hero-text {
+        font-size: 96px;
+        opacity: 0.8;
+        color: #051527;
+        margin: 0 0 10px;
+    }  
+
+    h2.song-title {
+        font-size: 64px;
+        opacity: 0.8;
+        color: #051527;
+        margin: 82px 0 0;
+      }
+
+      #play-button, #pause-button  {
+        margin: 100px 0 0;
+    
+      }  
+    
+      .audio-container {
+        margin: -50px 0 0;
+        
+        
+      }  
+
+  }
+
+  @media (min-width: 900px) and (max-width: 1080px) and (orientation: landscape) {
+    body {
+      background-position: center;
+       
+           }
+  }
+  
+
+
+/* pop up */
+
+
+  
+  
+  

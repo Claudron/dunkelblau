@@ -1,0 +1,58 @@
+{% block head %}{% endblock %}
+{% block body %}  
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title style="display: block; margin: auto;">Dunkelblau</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</head>
+<body>
+  <div class="fixed-container">
+    
+      <div class="audio-container">
+           
+          <div id="audio-player">
+
+            <h1 class="center-text hero-text shadow">Dunkelblau</h1>
+            <h2 class="song-title center-text shadow">{{ song_title }}</h2>  
+
+
+
+            <audio id="audio" src="{{ audio_url }}"></audio>
+                <button id="play-button" class="button-icon shadow">
+                  <i class="fa fa-play"></i>
+                </button>
+              <button id="pause-button" class="button-icon shadow">
+                <i class="fa fa-pause"></i>
+              <h3 class="time center-text shadow" id="time">0</h3>  
+            </div>
+              
+      </div>
+  </div>
+  <!-- footer popup -->
+
+
+  <footer>
+    
+    
+    </div>
+        <h4 class="footer-text shadow">beta</h4>      
+    </div>
+    
+  
+  </footer>
+</body>
+
+</html>
+
+
+{% endblock %}
